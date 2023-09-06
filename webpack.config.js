@@ -33,7 +33,7 @@ export default {
       },
     ],
   },
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
@@ -47,7 +47,7 @@ export default {
     new CleanWebpackPlugin(),
   ],
 
-  mode: 'development',
+  mode: 'production',
   watch: true,
   watchOptions: {
     poll: true,
