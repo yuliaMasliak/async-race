@@ -49,8 +49,4 @@ export default {
 
   mode: 'production',
   watch: true,
-  watchOptions: {
-    poll: true,
-    ignored: /node_modules/,
-  },
 };
