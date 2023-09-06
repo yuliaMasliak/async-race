@@ -27,7 +27,7 @@ let userBlock = document.createElement('div');
 userBlock.classList.add('.user-block');
 
 let createCarBlock = document.createElement('div');
-createCarBlock.classList.add('.create-car-block');
+createCarBlock.classList.add('create-car-block');
 
 let inputCarName = document.createElement('input');
 inputCarName.classList.add('input-car-create');
@@ -46,7 +46,7 @@ btnCarCreate.classList.add('btn-create-car');
 btnCarCreate.innerHTML = 'create';
 
 let updateCarblock = document.createElement('div');
-updateCarblock.classList.add('.update-car-block');
+updateCarblock.classList.add('update-car-block');
 let inputCarUpdate = document.createElement('input');
 inputCarUpdate.classList.add('input-car-update');
 inputCarUpdate.setAttribute('type', 'text');
@@ -164,7 +164,7 @@ let winnersTotalBlock = document.createElement('div');
 winnersPageButton.innerHTML = currentWinnerPage;
 
 function renderPageElements() {
-  document.body.append(logo, loader);
+  document.body.append(logo);
   document.body.append(titleGarage, titleWinners);
   createCarBlock.append(inputCarName, inputCarColor, btnCarCreate);
   updateCarblock.append(inputCarUpdate, inputCarColorUpdate, btnCarUpdate);
@@ -194,7 +194,7 @@ function renderPageElements() {
   winnersPage.append(winnersList);
   document.body.append(winnersPage);
 
-  document.body.append(garagePage, winnersPage);
+  document.body.append(garagePage, winnersPage, loader);
 }
 renderPageElements();
 
