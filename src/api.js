@@ -40,7 +40,7 @@ const basis = async () => {
     { key: '_page', value: currentPage },
     { key: '_limit', value: carsPerPage },
   ]);
-  //loader.remove();
+  loader.remove();
   document.querySelectorAll('.racing-car-block').forEach((el) => el.remove());
   cars.forEach((el) => addCars(el.name, el.color, el.id));
   return cars;
