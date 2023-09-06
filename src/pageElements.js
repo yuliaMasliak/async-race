@@ -164,7 +164,7 @@ let winnersTotalBlock = document.createElement('div');
 winnersPageButton.innerHTML = currentWinnerPage;
 
 function renderPageElements() {
-  document.body.append(logo, loader);
+  document.body.append(logo);
   document.body.append(titleGarage, titleWinners);
   createCarBlock.append(inputCarName, inputCarColor, btnCarCreate);
   updateCarblock.append(inputCarUpdate, inputCarColorUpdate, btnCarUpdate);
@@ -194,7 +194,7 @@ function renderPageElements() {
   winnersPage.append(winnersList);
   document.body.append(winnersPage);
 
-  document.body.append(garagePage, winnersPage);
+  document.body.append(garagePage, winnersPage, loader);
 }
 renderPageElements();
 
